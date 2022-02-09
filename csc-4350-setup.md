@@ -26,7 +26,7 @@ Create a free account on Heroku: https://signup.heroku.com/login
 ## PostgreSQL setup
 ```
 sudo apt install postgresql
-sudo services postgresql start
+sudo service postgresql start
 sudo -u postgres psql  # just testing that psql is installed. You should get an interactive prompt. Quit by entering "\q"
 pip3 install psycopg2-binary
 pip3 install Flask-SQLAlchemy==2.1
