@@ -60,6 +60,7 @@ Create a free account on Heroku: https://signup.heroku.com/login
 brew install postgresql
 brew services start postgresql
 psql -h localhost  # this is just to test out that postgresql is installed okay - type "\q" to quit
+# if the above command gives you an error like "database <user> does not exist," try the workaround in this link: https://stackoverflow.com/questions/17633422/psql-fatal-database-user-does-not-exist
 pip3 install psycopg2-binary
 pip3 install Flask-SQLAlchemy==2.1
 ```
