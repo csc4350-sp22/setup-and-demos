@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href={{ url_for( 'static', filename='style.css' ) }} />
+</head>
+
+<body>
+    <h1>What's being reported about {{ topic }}?</h1>
+    <div class='container'>
+        {% for i in range(10) %}
+        <div class='item'>
+            <p><b>{{ headlines[i] }}</b></p>
+            <p>{{ snippets[i] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
