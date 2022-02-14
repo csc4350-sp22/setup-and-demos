@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <b>{{message}}</b>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <h1>Enter your campus ID</h1>
+        <form method="POST" action="/handle_form">
+            <input type="text" name="campus_id"/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
