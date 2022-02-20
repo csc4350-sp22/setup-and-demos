@@ -32,6 +32,13 @@ pip3 install psycopg2-binary
 pip3 install Flask-SQLAlchemy==2.1
 ```
 
+## React/Node
+```
+sudo apt update
+sudo apt install npm
+npx create-react-app my-first-app  # this will install the create-react-app tool
+```
+
 # Mac
 
 ## GitHub
@@ -64,4 +71,11 @@ psql -h localhost  # this is just to test out that postgresql is installed okay 
 # if the above command gives you an error like "database <user> does not exist," try the workaround in this link: https://stackoverflow.com/questions/17633422/psql-fatal-database-user-does-not-exist
 pip3 install psycopg2-binary
 pip3 install Flask-SQLAlchemy==2.1
+```
+
+## React/Node
+```
+brew update
+brew install node
+npx create-react-app my-first-app  # this will install the create-react-app tool
 ```
