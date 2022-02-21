@@ -38,6 +38,11 @@ sudo apt update
 sudo apt install npm
 npx create-react-app my-first-app  # this will install the create-react-app tool
 ```
+If you get an error about your node version being out of date, try
+```
+sudo npm install n
+sudo n latest
+```
 
 # Mac
 
