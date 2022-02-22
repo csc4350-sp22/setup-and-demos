@@ -40,9 +40,11 @@ npx create-react-app my-first-app  # this will install the create-react-app tool
 ```
 If you get an error about your node version being out of date, try
 ```
-sudo npm install n
+sudo npm install -g n
 sudo n latest
 ```
+
+If that still doesn't work, try the instructions [here](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/react-on-wsl).
 
 # Mac
 
