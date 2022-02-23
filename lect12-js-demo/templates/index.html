@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        
+    </head>
+    <body>
+        {% with messages = get_flashed_messages() %}
+			{% if messages %}
+				<ul id="flashes" class=flashes>
+					{% for message in messages %}
+						<li>{{ message }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		{% endwith %}
+        <form method="POST" action="/login" onsubmit="return validateForm()">
+            <input type="text" name="campus_id" placeholder="Campus ID">
+            <input type="submit" value="Submit">
+        </form>
+        <button id="myCoolButton">Click me!</button>
+        <script type="text/javascript" src="/static/script.js"></script>
+    </body>
+</html>
