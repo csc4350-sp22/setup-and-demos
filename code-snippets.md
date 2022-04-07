@@ -2,7 +2,7 @@
 Adding a database to a Heroku app:
 
 ```
-heroku addons:create heroku-postgres:hobby-dev
+heroku addons:create heroku-postgresql:hobby-dev
 ```
 
 Basic DB setup in a Flask app:
