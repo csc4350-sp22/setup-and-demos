@@ -64,3 +64,9 @@ flask.flash("message")
 {% endwith %}
 ```
 
+# Deploying a Flask + React app
+The following assumes that you are using `npm run build` to generate static React resources that Flask sends down along with HTML. If you're following the Milestone 3 starter code, this applies to you.
+
+1. Create a Heroku app: `heroku create --buildpack heroku/python`
+2. Add nodejs buildpack: `heroku buildpacks:add --index 1 heroku/nodejs`
+3. Push to Heroku: `git push heroku main`
