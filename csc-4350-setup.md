@@ -29,7 +29,7 @@ sudo apt install postgresql
 sudo service postgresql start
 sudo -u postgres psql  # just testing that psql is installed. You should get an interactive prompt. Quit by entering "\q"
 pip3 install psycopg2-binary
-pip3 install Flask-SQLAlchemy==2.1
+pip3 install Flask-SQLAlchemy
 ```
 
 ## React/Node
